@@ -1,0 +1,101 @@
+h1{
+  color:rgb(27, 16, 220);
+  background-color:gold;
+  box-shadow:2px 3px 4px 5px  #0939e6;
+  text-align: center;
+}
+.left {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #d7e270;
+  float: left;
+  text-align:left;
+}
+
+#task-form label,
+#search-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#task-title,
+#task-description,
+#search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#todo-list {
+  margin-top: 20px;
+  background-color: #f1373b;
+}
+
+/* Apply styling to the right side of the page (Find a Task and Done List) */
+.right {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #e2d0d0;
+  float: right;
+  text-align: left;
+}
+
+#searched-tasks {
+  margin-top: 20px;
+  border: 2px solid #7272f0;
+  background-color: aqua;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: white;
+  border: 3px solid #0939e6;
+  border-radius: 4px;
+}
+
+/* Additional styles for completed tasks */
+li input[type="checkbox"]:checked ~ span {
+  text-decoration: line-through;
+}
+#done-list{
+  background-color: #72f096;
+  align-items: center;
+}
+/* Center search form buttons */
+#search-form button,
+#clear-search {
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Clear floats after the left and right sections */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Apply styling to the left side of the page (Add a Task and To-Do List) */
+
+
+#task-title,
+#task-description,
+#search-input {
+
+  width: calc(100% - 48px); /* Adjust the width calculation as needed */
+}
+
+#task-form button,
+#search-form button,
+#clear-search {
+  /* Match the width to the input fields */
+  width: calc(100% - 40px);
+
+}
